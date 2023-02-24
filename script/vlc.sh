@@ -13,7 +13,7 @@ snap="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKv
 # Download
 #--------------------------------------------------------------------------------------------------
 
-curl -L -o archive.json "$snap"
+curl -L -o archive.snap "$snap"
 
 #--------------------------------------------------------------------------------------------------
 # Extract
