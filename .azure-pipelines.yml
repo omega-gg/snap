@@ -1,0 +1,16 @@
+#--------------------------------------------------------------------------------------------------
+# Snaps
+#--------------------------------------------------------------------------------------------------
+
+jobs:
+- job: vlc_amd64
+  pool:
+    vmImage: "ubuntu-latest"
+  steps:
+  - bash: |
+      cd script
+      sh vlc.sh
+      cd ../deploy
+      zip -rq ../vlc.zip *
+  - publish: $(System.DefaultWorkingDirectory)/vlc.zip
+    artifact: vlc_amd64
