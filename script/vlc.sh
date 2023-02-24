@@ -25,7 +25,7 @@ unsquashfs -f -d data archive.snap
 # Deploy
 #--------------------------------------------------------------------------------------------------
 
-rm -rf $deploy
+rm -rf deploy/*
 
 touch $deploy/.gitignore
 
