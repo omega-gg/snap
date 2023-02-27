@@ -11,6 +11,6 @@ jobs:
       cd script
       sh vlc.sh
       cd ../deploy
-      zip -rq ../vlc.zip *
-  - publish: $(System.DefaultWorkingDirectory)/vlc.zip
+      zip -rq ../VLC.zip *
+  - publish: $(System.DefaultWorkingDirectory)/VLC.zip
     artifact: VLC-linux64
