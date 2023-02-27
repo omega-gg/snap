@@ -3,7 +3,7 @@
 #--------------------------------------------------------------------------------------------------
 
 jobs:
-- job: vlc_amd64
+- job: VLC_linux64
   pool:
     vmImage: "ubuntu-latest"
   steps:
@@ -13,4 +13,4 @@ jobs:
       cd ../deploy
       zip -rq ../vlc.zip *
   - publish: $(System.DefaultWorkingDirectory)/vlc.zip
-    artifact: vlc_amd64
+    artifact: VLC-linux64
