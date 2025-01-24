@@ -19,6 +19,7 @@ snap4="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NK
 
 download()
 {
+    echo ""
     echo "DOWNLOADING $1"
     echo "$2"
 
@@ -35,24 +36,22 @@ download()
     mv data/* $deploy/$1
 
     rm -rf data
-
-    echo ""
 }
 
 #--------------------------------------------------------------------------------------------------
 # List
 #--------------------------------------------------------------------------------------------------
 
+echo ""
 echo "LISTING"
 
 curl -H 'Snap-Device-Series: 16' http://api.snapcraft.io/v2/snaps/info/vlc
-
-echo ""
 
 #--------------------------------------------------------------------------------------------------
 # Clean
 #--------------------------------------------------------------------------------------------------
 
+echo ""
 echo "CLEANING"
 
 rm -rf deploy/*
