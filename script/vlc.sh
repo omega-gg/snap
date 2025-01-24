@@ -7,11 +7,11 @@ set -e
 
 deploy="../deploy"
 
-VLC_versionA="3.0.21"
-VLC_versionB="4.0.0"
+VLC3_version="3.0.21"
+VLC4_version="4.0.0"
 
-snapA="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd_3777.snap"
-snapB="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd_4070.snap"
+snap3="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd_3777.snap"
+snap4="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd_4070.snap"
 
 #--------------------------------------------------------------------------------------------------
 # Functions
@@ -63,5 +63,5 @@ touch $deploy/.gitignore
 # Download
 #--------------------------------------------------------------------------------------------------
 
-download $VLC_versionA "$snapA"
-download $VLC_versionB "$snapB"
+download $VLC3_version "$snap3"
+download $VLC4_version "$snap4"
