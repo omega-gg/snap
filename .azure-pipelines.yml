@@ -15,7 +15,6 @@ jobs:
   - publish: $(System.DefaultWorkingDirectory)/VLC.zip
     artifact: VLC3-linux64
 
-jobs:
 - job: VLC4_linux64
   pool:
     vmImage: "ubuntu-latest"

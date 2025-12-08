@@ -56,7 +56,7 @@ fi
 echo ""
 echo "LISTING"
 
-curl -H 'Snap-Device-Series: 16' http://api.snapcraft.io/v2/snaps/info/vlc
+curl -H "Snap-Device-Series: 16" http://api.snapcraft.io/v2/snaps/info/vlc
 
 #--------------------------------------------------------------------------------------------------
 # Clean
