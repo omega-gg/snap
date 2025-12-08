@@ -3,14 +3,27 @@
 #--------------------------------------------------------------------------------------------------
 
 jobs:
-- job: VLC_linux64
+- job: VLC3_linux64
   pool:
     vmImage: "ubuntu-latest"
   steps:
   - bash: |
       cd script
-      sh vlc.sh
+      sh vlc.sh vlc3
       cd ../deploy
       zip -rq ../VLC.zip *
   - publish: $(System.DefaultWorkingDirectory)/VLC.zip
-    artifact: VLC-linux64
+    artifact: VLC3-linux64
+
+jobs:
+- job: VLC4_linux64
+  pool:
+    vmImage: "ubuntu-latest"
+  steps:
+  - bash: |
+      cd script
+      sh vlc.sh vlc4
+      cd ../deploy
+      zip -rq ../VLC.zip *
+  - publish: $(System.DefaultWorkingDirectory)/VLC.zip
+    artifact: VLC4-linux64
