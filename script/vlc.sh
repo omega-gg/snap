@@ -7,7 +7,7 @@ set -e
 
 deploy="../deploy"
 
-VLC3_version="3.0.21"
+VLC3_version="3.0.23"
 VLC4_version="4.0.0"
 
 snap3="https://api.snapcraft.io/api/v1/snaps/download/RT9mcUhVsRYrDLG8qnvGiy26NKvv6Qkd_3777.snap"
